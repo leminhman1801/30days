@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-container {
+    background: linear-gradient(45deg, #00853e, #50c878);;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content {
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+}
+.card-avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.card-img {
+    max-width: 150px;
+    clip-path: circle(40%);  
+    border: 4px solid pink;
+    
+}
+.card-info {
+    text-align: center;
+    margin-top: 20px;
+}
+.full-name {
+    color: #fff;
+}
+.desc-text {
+    color: pink;
+    line-height: 23px;
+}
+.card-media {
+    display: flex;
+    justify-content: center;
+}
+.media-icon {
+    color: #fff;
+    margin: 25px 20px 40px;
+    font-size: 20px;
+    /* text-decoration: none; */
+}
+.card-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-btn {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    height: 42px;
+    width: 121px;
+}
