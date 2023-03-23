@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  min-height: 100vh;
+  background-color: #eae0da;
+  display: grid;
+  place-items: center;
+}
+.clock {
+  width: 350px;
+  height: 350px;
+  border: 8px solid #eac7c7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock span {
+  position: absolute;
+  inset: 146px;
+  color: #eac7c7;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--1)));
+  padding-bottom: 124px;
+}
+.clock span b {
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--1)));
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #a0c3d2;
+  border-radius: 50%;
+}
+.clock-alarm {
+  position: absolute;
+  display: flex;
+  text-align: end;
+  bottom: 50px;
+}
+.clock-alarm span {
+  color: #eac7c7;
+  font-size: 35px;
+}
+.hour,
+.minute,
+.second {
+  position: absolute;
+}
+.hour,
+.hr {
+  width: 200px;
+  height: 200px;
+}
+.minute,
+.min {
+  width: 230px;
+  height: 230px;
+}
+.second,
+.sec {
+  width: 250px;
+  height: 250px;
+}
+.hr,
+.min,
+.sec {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.hr::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100px;
+  background-color: #a0c3d2;
+}
+.min::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  background-color: #a0c3d2;
+}
+.sec::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background-color: #a0c3d2;
+}
+.test {
+  width: 250px;
+  height: 250px;
+  background-color: #eac7c7;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.container-test {
+  display: grid;
+  place-items: center;
+}
+.test::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  background-color: aqua;
+}

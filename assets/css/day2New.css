@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-open {
+  background-color: #242628;
+  color: #fff;
+}
+.card-content {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  /* max-height: 100%; */
+  background-color: #242628;
+  border-radius: 15px;
+  margin: 0;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-avt {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-avt .img-item {
+  width: 50%;
+  object-fit: cover;
+  clip-path: circle(40%);
+  transition: 0.25s;
+}
+.card-avt .img-item:hover {
+  margin-top: -25px;
+  clip-path: unset;
+  width: 300px;
+  height: 400px;
+}
+
+.card-info {
+  /* width: 300px; */
+  color: #fff;
+  text-align: center;
+}
+.card-info h2 {
+  margin-top: 20px;
+}
+.card-info .level {
+  color: pink;
+  margin-top: 15px;
+}
+.card-social {
+  display: flex;
+  justify-content: center;
+  padding: 0 25px;
+}
+.card-social .social-icon {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 25px;
+  width: 25%;
+}
+.social-icon:hover {
+  color: pink;
+}
+.card-contact {
+  display: flex;
+  justify-content: center;
+}
+.card-contact .btn-contact {
+  padding: 13px 25px;
+  border: 1px solid pink;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+.btn-contact:hover {
+  background-color: pink;
+  color: #000;
+}
+.modal-card {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.btn-open-modal {
+  background-color: pink;
+  padding: 20px 40px;
+  border: none;
+}
+.modal-container {
+}
+.modal-content {
+}
+.btn-close {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  right: 5px;
+  position: absolute;
+  /* top: 10px; */
+  padding: 10px;
+}
+.close-icon {
+  font-size: 25px;
+}
+.open {
+  display: block;
+}
+.remove {
+  display: none;
+}

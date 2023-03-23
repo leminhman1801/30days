@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+.card-content {
+  width: 320px;
+  height: 400px;
+  background-color: #272d40;
+  border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+}
+.card-icon {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 23px;
+  /* padding: 20px 20px 0 20px; */
+}
+.card-heart .card-cart {
+}
+.card-img {
+  transition: 0.5s;
+}
+.card-content:hover .card-img {
+  transform: translateY(-90px) rotate(-20deg);
+}
+.card-img .img-item {
+  max-width: 252px;
+}
+.card-name {
+}
+.text-name {
+  color: #4daf54;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.text-price {
+  color: #fff;
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.card-content:hover .text-name {
+  transform: translate(-41px, -70px);
+}
+.card-content:hover .text-price {
+  transform: translate(-118px, -70px);
+}
+.card-hidden {
+  margin-top: 120px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2;
+  height: auto;
+}
+.card-content:hover .card-hidden {
+  visibility: visible;
+  margin-top: -30px;
+  opacity: 100;
+}
+.card-size {
+  display: flex;
+  margin-bottom: 20px;
+}
+.card-size:first-child {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+.card-size .size-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #dadada;
+  color: black;
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.card-color {
+  color: #fff;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.card-color span {
+  margin-left: 10px;
+  background-color: #dadada;
+  color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.card-color .green {
+  background-color: green;
+}
+.card-color .red {
+  background-color: red;
+}
+.card-color .black {
+  background-color: #000;
+}
+.card-buy {
+  display: flex;
+}
+.card-buy .btn-buy,
+.card-buy .btn-add {
+  color: #fff;
+  background-color: #4daf54;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.btn-buy:hover,
+.btn-add:hover {
+  scale: 0.9;
+}
